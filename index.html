@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="resources/images/paw.jpg" type="image/jpg">
+    <meta name="viewport" content="width=device-width">
     <title>Dog Central | Age Calculator</title>
 
     <!-- Fonts -->
@@ -67,17 +68,81 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron">
-      <h1 class="display-4">Dog Age Chart</h1>
-      <p class="lead">Always wanted to know the real age of your dog? Complete the form below and find out!</p>
+      <div class="container">
+        <h1 class="display-4">Dog Age Chart</h1>
+        <p class="lead">Always wanted to know the real age of your dog? Complete the form below and find out!</p>
+      </div>
       <hr class="my-4">
 
-      <!-- Dog Size -->
+      <div class="container">
+        <div class="row">
+
+          <!-- First column -->
+          <div class="col-12 col-lg-6">
+            <div class="chart">
+              <div class="size-section">
+                <h4>Size</h4>
+                  <p>Select the size:</p>
+                  <div id="size">
+
+
+                    <input type="radio" id="small" class="radio_item" name="size" value="small" checked>
+                      <label class="label_item" for="small">
+                        <img src="resources/images/small.jpeg" alt="small dog">
+                        <p class="desc desc-size">Small</p>
+                        <p class="desc desc-weight">20 lbs. or less</p>
+                      </label>
+
+
+                    <input type="radio" id="medium" class="radio_item" name="size" value="medium">
+                      <label class="label_item" for="medium">
+                        <img src="resources/images/medium.jpeg" alt="medium dog">
+                        <p class="desc desc-size">Medium</p>
+                        <p class="desc desc-weight">21-50 lbs.</p>
+                      </label>
+
+
+                    <input type="radio" id="large" class="radio_item" name="size" value="large">
+                      <label class="label_item" for="large">
+                    <img src="resources/images/large.jpg" alt="large dog">
+                    <p class="desc desc-size">Large</p>
+                    <p class="desc desc-weight">More than 50 lbs.</p>
+                  </label>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+          <!-- Second column -->
+          <div class="col-12 col-lg-6">
+            <div class="age-section">
+              <h4>Age</h4>
+                <div class="age">
+                  <p>Type in an age between 1 and 16.</p>
+                  <input type="number" id="age" name="age" min="1" max="16">
+              </div>
+
+              <a class="btn btn-primary btn-lg" href="#" role="button" onclick="myFunction()">Calculate</a>
+              <p id="output"></p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <!-- Dog Size -
       <div class="chart">
         <div class="size-section">
           <h4>Size</h4>
             <p>Select the size:</p>
             <div id="size">
-              <!-- Small dogs -->
+
+
               <input type="radio" id="small" class="radio_item" name="size" value="small" checked>
                 <label class="label_item" for="small">
                   <img src="resources/images/small.jpeg" alt="small dog">
@@ -85,7 +150,7 @@
                   <p class="desc desc-weight">20 lbs. or less</p>
                 </label>
 
-              <!-- Medium dogs -->
+
               <input type="radio" id="medium" class="radio_item" name="size" value="medium">
                 <label class="label_item" for="medium">
                   <img src="resources/images/medium.jpeg" alt="medium dog">
@@ -93,7 +158,7 @@
                   <p class="desc desc-weight">21-50 lbs.</p>
                 </label>
 
-              <!-- Large dogs -->
+
               <input type="radio" id="large" class="radio_item" name="size" value="large">
                 <label class="label_item" for="large">
               <img src="resources/images/large.jpg" alt="large dog">
@@ -116,6 +181,7 @@
         </div>
       </div>
     </div>
+  -->
 
     <!-- Footer -->
     <footer>
