@@ -125,7 +125,7 @@ footer a:hover {
 
 @media only screen and (max-width: 450px) {
   .lead {
-    display: none;
+    font-size: 0.5rem;
   }
 
   a.btn.btn-primary.btn-lg {
