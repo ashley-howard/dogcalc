@@ -53,6 +53,10 @@ p.desc.desc-weight {
 }
 */
 
+label {
+  cursor: pointer;
+}
+
 .radio_item{
 display: none !important;
 }
@@ -63,4 +67,12 @@ opacity: 0.1;
 
 .radio_item:checked + label {
 opacity: 1;
+}
+
+a.btn.btn-primary.btn-lg {
+  margin-top: 2rem;
+}
+
+p#output {
+    margin-top: 1rem;
 }
