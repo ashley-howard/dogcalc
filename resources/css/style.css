@@ -1,3 +1,7 @@
+body {
+  background-color: #e9ecef;
+}
+
 .container {
   max-width: 1100px;
 }
@@ -81,7 +85,8 @@ p#output {
 
 /*-- Footer -- */
 footer {
-  margin-left: 1rem;
+  padding-left: 1rem;
+  background-color: #ffffff82;
 }
 
 footer ul {
