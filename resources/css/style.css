@@ -16,25 +16,20 @@ body {
 /*-- Jumbotron --*/
 .jumbotron {
   padding-top: 20px;
+  padding-bottom: 192px;
   padding-bottom: 12rem;
   margin-bottom: 0;
 }
 
-/*
-.chart {
-  display: flex;
-  max-width: 1300px;
-  margin: auto;
-}
-*/
-
 .age-section {
+  padding-left: 48px;
   padding-left: 3rem;
 }
 
 p.desc {
   text-align: center;
   background-color: #ffffff57;
+  font-size: 14.4px;
   font-size: 0.9rem;
 }
 
@@ -45,11 +40,7 @@ p.desc.desc-size {
 }
 
 p.desc.desc-weight {
-    color: #717171;
-}
-
-.label_item img {
-  width: 100%;
+  color: #717171;
 }
 
 label {
@@ -57,41 +48,53 @@ label {
 }
 
 .radio_item{
-display: none !important;
+  display: none !important;
 }
 
 .label_item {
-opacity: 0.1;
+  opacity: 0.1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 }
 
 label.label_item {
   width: 32%;
 }
 
+.label_item img {
+  width: 100%;
+}
+
 .radio_item:checked + label {
-opacity: 1;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 a.btn.btn-primary.btn-lg {
+  margin-top: 32px;
   margin-top: 2rem;
 }
 
 p#output {
-    margin-top: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 /*-- Footer -- */
 footer {
+  padding-left: 16px;
   padding-left: 1rem;
   background-color: #ffffff82;
 }
 
 footer ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0;
 }
 
 footer li {
+  padding: 8px 16px;
   padding: 0.5rem 1rem;
 }
 
@@ -113,9 +116,7 @@ footer a:hover {
   h1.display-4 {
     font-size: 2rem;
   }
-}
 
-@media only screen and (max-width: 400px) {
   p.desc {
     font-size: 0.5rem;
   }
