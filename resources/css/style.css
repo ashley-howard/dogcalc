@@ -127,6 +127,15 @@ footer a:hover {
   .lead {
     display: none;
   }
+
+  a.btn.btn-primary.btn-lg {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+  p#output{
+    margin-top: 0.5rem;
+  }
 }
 
 @media only screen and (max-width: 992px) {
