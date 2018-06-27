@@ -134,7 +134,11 @@ footer a:hover {
 }
 
   p#output{
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+  }
+
+  p.lead {
+    margin-bottom: -15px;
   }
 }
 
