@@ -1,0 +1,66 @@
+.container {
+  max-width: 1100px;
+}
+
+.logo {
+  width: 30px;
+  height: 22px;
+  padding-right: 5px;
+  margin-top: -5px;
+}
+
+/*-- Jumbotron --*/
+.jumbotron {
+  padding-top: 20px;
+}
+
+.chart {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.age-section {
+  padding-left: 3rem;
+}
+
+p.desc {
+  text-align: center;
+  background-color: #ffffff57;
+  font-size: 0.9rem;
+}
+
+p.desc.desc-size {
+  margin-bottom: 0px;
+  font-weight: 500;
+  color: #404040;
+}
+
+p.desc.desc-weight {
+    color: #717171;
+}
+
+.label_item img {
+  width: 200px;
+  height: 200px;
+}
+
+/*
+.desc {
+  font-size: 1rem;
+  text-align: center;
+  background-color: #ffffff70;
+}
+*/
+
+.radio_item{
+display: none !important;
+}
+
+.label_item {
+opacity: 0.1;
+}
+
+.radio_item:checked + label {
+opacity: 1;
+}
