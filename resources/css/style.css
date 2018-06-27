@@ -118,12 +118,14 @@ footer a:hover {
     font-weight: 500;
   }
 
-  .lead {
-    font-size: 0.5rem;
-  }
-
   p.desc {
     font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .lead {
+    display: none;
   }
 }
 
