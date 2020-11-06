@@ -126,11 +126,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 450px) {
-  .lead {
-    font-size: 0.5rem;
-  }
-
-  a.btn.btn-primary.btn-lg {
+   a.btn.btn-primary.btn-lg {
     margin-top: 1rem;
     font-size: 1rem;
 }
@@ -139,9 +135,6 @@ footer a:hover {
     margin-top: 0.8rem;
   }
 
-  p.lead {
-    margin-bottom: -15px;
-  }
   
   h4 {
 	font-size: 1rem;

@@ -1,151 +1,174 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="resources/images/paw.jpg" type="image/jpg">
-    <meta name="viewport" content="width=device-width">
-    <title>Dog Central | Age Calculator</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36937888-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  </head>
-  <body>
+    gtag('config', 'UA-36937888-3');
+  </script>
 
-    <!-- SOURCE: https://pets.webmd.com/dogs/how-to-calculate-your-dogs-age -->
+  <meta charset="utf-8">
+  <link rel="icon" href="resources/images/paw.jpg" type="image/jpg">
+  <meta name="viewport" content="width=device-width">
+  <title>Dog Central | Age Calculator</title>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img class="logo" src="resources/images/paw.jpg" alt="">Dog Central</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources/css/style.css" type="text/css">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Get Involved
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Memberships</a>
-              <a class="dropdown-item" href="#">Fundraising</a>
-              <a class="dropdown-item" href="#">Sponsor</a>
-              <a class="dropdown-item" href="#">Rehoming</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Reference
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Dog Age Chart</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">FAQs</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+</head>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-4">Dog Age Chart</h1>
-        <p class="lead">Always wanted to know the real age of your dog? Complete the form below and find out!</p>
-      </div>
-      <hr class="my-4">
+<body>
 
-      <div class="container">
-        <div class="row">
+  <!-- SOURCE: https://pets.webmd.com/dogs/how-to-calculate-your-dogs-age -->
 
-          <!-- First column -->
-          <div class="col-12 col-lg-6">
-            <div class="chart">
-              <div class="size-section">
-                <h4>Size</h4>
-                  <p>Select the size:</p>
-                  <div id="size">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="resources/images/paw.jpg" alt="">Dog Central</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                    <!-- Small dog -->
-                    <input type="radio" id="small" class="radio_item" name="size" value="small" checked>
-                      <label class="label_item" for="small">
-                        <img src="resources/images/small.jpeg" alt="small dog">
-                        <p class="desc desc-size">Small</p>
-                        <p class="desc desc-weight">20 lbs. or less</p>
-                      </label>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Get Involved
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Memberships</a>
+            <a class="dropdown-item" href="#">Fundraising</a>
+            <a class="dropdown-item" href="#">Sponsor</a>
+            <a class="dropdown-item" href="#">Rehoming</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Reference
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Dog Age Chart</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">FAQs</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
-                    <!-- Medium dog -->
-                    <input type="radio" id="medium" class="radio_item" name="size" value="medium">
-                      <label class="label_item" for="medium">
-                        <img src="resources/images/medium.jpeg" alt="medium dog">
-                        <p class="desc desc-size">Medium</p>
-                        <p class="desc desc-weight">21-50 lbs.</p>
-                      </label>
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Dog Age Chart</h1>
+      <p class="lead">Always wanted to know the real age of your dog? Complete the form below and find out!</p>
+    </div>
+    <hr class="my-4">
 
-                    <!-- Large dog -->
-                    <input type="radio" id="large" class="radio_item" name="size" value="large">
-                      <label class="label_item" for="large">
-                    <img src="resources/images/large.jpg" alt="large dog">
-                    <p class="desc desc-size">Large</p>
-                    <p class="desc desc-weight">More than 50 lbs.</p>
-                  </label>
-                  </div>
+    <div class="container">
+      <div class="row">
+
+        <!-- First column -->
+        <div class="col-12 col-lg-6">
+          <div class="chart">
+            <div class="size-section">
+              <h4>Size</h4>
+              <p>Select the size:</p>
+              <div id="size">
+
+                <!-- Small dog -->
+                <input type="radio" id="small" class="radio_item" name="size" value="small" checked>
+                <label class="label_item" for="small">
+                  <img src="resources/images/small.jpeg" alt="small dog">
+                  <p class="desc desc-size">Small</p>
+                  <p class="desc desc-weight">20 lbs. or less</p>
+                </label>
+
+                <!-- Medium dog -->
+                <input type="radio" id="medium" class="radio_item" name="size" value="medium">
+                <label class="label_item" for="medium">
+                  <img src="resources/images/medium.jpeg" alt="medium dog">
+                  <p class="desc desc-size">Medium</p>
+                  <p class="desc desc-weight">21-50 lbs.</p>
+                </label>
+
+                <!-- Large dog -->
+                <input type="radio" id="large" class="radio_item" name="size" value="large">
+                <label class="label_item" for="large">
+                  <img src="resources/images/large.jpg" alt="large dog">
+                  <p class="desc desc-size">Large</p>
+                  <p class="desc desc-weight">More than 50 lbs.</p>
+                </label>
               </div>
+            </div>
           </div>
         </div>
 
-          <!-- Second column -->
-          <div class="col-12 col-lg-6">
-            <div class="age-section">
-              <h4>Age</h4>
-                <div class="age">
-                  <p>Type in an age between 1 and 16.</p>
-                  <input type="number" id="age" name="age" min="1" max="16">
-              </div>
-
-              <a class="btn btn-primary btn-lg" href="#" role="button" onclick="myFunction()">Calculate</a>
-              <p id="output"></p>
-
+        <!-- Second column -->
+        <div class="col-12 col-lg-6">
+          <div class="age-section">
+            <h4>Age</h4>
+            <div class="age">
+              <p>Type in an age between 1 and 16.</p>
+              <input type="number" id="age" name="age" min="1" max="16">
             </div>
-          </div>
 
+            <a class="btn btn-primary btn-lg" href="#" role="button" onclick="myFunction()">Calculate</a>
+            <p id="output"></p>
+
+          </div>
         </div>
+
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-      <span>© 2018 Dog Central</span>
+  <!-- Footer -->
+  <footer>
+    <span>© 2018 Dog Central</span>
 
-      <ul>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Sitemap</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </footer>
+    <ul>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </footer>
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./resources/js/main.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./resources/js/main.js"></script>
+</body>
+
 </html>
